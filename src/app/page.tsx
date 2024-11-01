@@ -1,101 +1,77 @@
-import Image from "next/image";
-
-export default function Home() {
+  export default function Home () {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="bg-[#252B42] w-[fit] h-[1132px] top-[-590px] left-[-720px] items-center flex flex-col">
+      <nav className="w-full h-[91px] flex items-center ml-[59px]">
+        <div className="container w-full max-w-[1322px] flex justify-between items-center px-4 ml-8">
+          {/* Brand Name */}
+        <div className="w-auto flex items-center">
+          <h3 className="font-Montserrat font-bold text-[24px] text-[#ffffff] ml-64">BrandName</h3>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+          {/* Nav Links Centered */}
+        <div className="flex gap-4 mr-[350px]">
+          <span className="text-[#ffffff] font-Montserrat text-[14px] p-2">Home</span>
+          <span className="text-[#ffffff] font-Montserrat text-[14px] p-2">Product</span>
+          <span className="text-[#ffffff] font-Montserrat text-[14px] p-2">Pricing</span>
+          <span className="text-[#ffffff] font-Montserrat text-[14px] p-2">Contact</span>
+        </div>
+
+          {/* Login & Join Us Buttons Aligned with Third Box */}
+        <div className="flex items-center space-x-8">
+          <span className="font-Montserrat text-[14px] text-[#ffffff] hover:text-[#cccccc]">Login</span>
+          <button className="bg-[#23A6F0] text-[#ffffff] text-[14px] rounded-l-md px-6 py-2 hover:bg-blue-400">JOIN US</button>
+        </div>
+      </div>
+    </nav>
+
+
+      <div className="flex flex-col gap-[40px] mt-[104px]">
+        <div className="text-center">
+          <h5 className="font-Montserrat text-[16px] text-[#23A6F0] pb-8">Welcome</h5>
+          <h1 className="font-Montserrat text-[#FFFFFF] text-center text-[58px] font-bold">
+            Selling on the <br/> internet like a pro
+          </h1>
+          <h4 className="font-Montserrat text-center text-[#FFFFFF] text-[20px]">We know how large objects will act, but things on a 
+            <br/>small scale just do not act that way.
+          </h4>
+          <div className="flex space-x-4 justify-center items-center mt-[80px] mb-[80px]">
+            <button className="bg-[#23A6F0] text-[#ffffff] text-[14px] rounded px-6 py-2 hover:bg-blue-400">
+            Get Quote Now</button>
+            <button className="text-[#23A6F0] bg-[#252B42] text-[14px] rounded border-2 border-[#23A6f0] px-6 py-2 ">
+            Learn More</button>
+          </div>
+        </div>
+
+        <div className="flex flex-row gap-4">
+         {/* Card Portion 1 */}
+          <div className="flex flex-col w-[328px] h-[292px] bg-[#FFFFFF] shadow-xl p-6 ml-4">
+            <div className="w-[70px] h-[76px] bg-[#FFDCD1] rounded mb-4"></div>
+              <h5 className="font-Montserrat font-bold text-[#252B42] text-16 mb-4">Training Courses</h5>
+              <div className="h-[2px] w-[50px] bg-[#E74040] mb-4"></div>
+              <p className="font-Montserrat text-14 text-[#737373] text-justify">
+              The gradual accumulation of <br /> information about atomic and <br /> small-scale behaviour...</p>
+            </div>
+
+         {/* Card Portion 2 */}
+          <div className="flex flex-col w-[328px] h-[292px] bg-[#FFFFFF] shadow-xl p-6 ml-4">
+            <div className="w-[70px] h-[76px] bg-[#B9EAAB] rounded mb-4"></div>
+            <h5 className="font-Montserrat font-bold text-[#252B42] text-16 mb-4">2,769 Online Courses</h5>
+            <div className="h-[2px] w-[50px] bg-[#E74040] mb-4"></div>
+            <p className="font-Montserrat text-14 text-[#737373] text-justify">
+            The gradual accumulation of <br /> information about atomic and <br /> small-scale behaviour...</p>
+          </div>
+
+         {/* Card Portion 3 */}
+          <div className="flex flex-col w-[328px] h-[292px] bg-[#23A6F0] shadow-xl p-6 ml-4">
+            <div className="w-[70px] h-[76px] bg-[#FFFFFF] rounded mb-4"></div>
+              <h5 className="font-Montserrat font-bold text-[#FFFFFF] text-16 mb-4">Training Courses</h5>
+              <div className="h-[2px] w-[50px] bg-[#FFFFFF] mb-4"></div>
+              <p className="font-Montserrat text-14 text-[#FFFFFF] text-justify">
+              The gradual accumulation of <br /> information about atomic and <br /> small-scale behaviour...</p>
+          </div>
+        </div>
+
     </div>
-  );
+  </div>
+  )
 }
