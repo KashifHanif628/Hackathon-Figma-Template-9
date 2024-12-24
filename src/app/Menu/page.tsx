@@ -11,7 +11,7 @@ export default function Menu() {
         <ul className="flex items-center w-[56px] h-[28px] text-[20px] leading-[28px] text-[#FFFFFF] font-normal mt-6 ml-10">
           Home
           <li className="flex items-center gap-2 text-[#FF9F0D] font-normal w-[69px] h-[28px] ">
-            <img
+            <Image
               src="/images/Vector.png"
               alt="Vector"
               width={5}
@@ -123,8 +123,8 @@ export default function Menu() {
       </div>
 
       <div className="mt-[52px] max-auto lg:ml-[300px] flex ">
-        <img
-          src="images/maincourse.png"
+        <Image
+          src="/images/maincourse.png"
           alt="maincourse"
           width={1320}
           height={628}

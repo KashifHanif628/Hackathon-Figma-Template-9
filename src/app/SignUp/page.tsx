@@ -32,10 +32,11 @@ export default function SignUp() {
 
         {/* User Picture */}
         <div className="mt-[32px] ml-[52px] flex items-center w-[360px] h-[44px] border border-gray-300 rounded-md">
-          <img
-            src="images/User2.png"
+          <Image
+            src="/images/User2.png"
             alt="User2"
-            className="w-[24px] h-[24px] rounded-full ml-2 border-1.5 border-[#4F4F4F]"
+            width={24} height={24}
+            className="rounded-full ml-2 border-1.5 border-[#4F4F4F]"
           />
           {/* Input Field */}
           <input
@@ -47,10 +48,11 @@ export default function SignUp() {
 
         {/* envelop/email */}
         <div className="mt-[32px] ml-[52px] flex items-center w-[360px] h-[44px] border border-gray-300 rounded-md">
-          <img
-            src="images/email.png"
+          <Image
+            src="/images/email.png"
             alt="email"
-            className="w-[24px] h-[24px] rounded-full ml-2 border-1.5 border-[#4F4F4F]"
+            width={24} height={24}
+            className="rounded-full ml-2 border-1.5 border-[#4F4F4F]"
           />
           {/* Input Field */}
           <input
@@ -62,10 +64,11 @@ export default function SignUp() {
 
         {/* Password */}
         <div className="mt-[32px] ml-[52px] flex items-center w-[360px] h-[44px] border border-gray-300 rounded-md">
-          <img
-            src="images/Lock.png"
+          <Image
+            src="/images/Lock.png"
             alt="Lock"
-            className="w-[24px] h-[24px] rounded-full ml-2 border-1.5 border-[#4F4F4F]"
+            width={24} height={24}
+            className="rounded-full ml-2 border-1.5 border-[#4F4F4F]"
           />
           {/* Input Field */}
           <input
@@ -76,7 +79,7 @@ export default function SignUp() {
         </div>
 
         <div className="flex w-[129px] h-[22px] mt-4 ml-10">
-          <img src="images/Cheek.png" alt="Cheek" width={20} height={20} />
+          <Image src="/images/Cheek.png" alt="Cheek" width={20} height={20} />
           <p className="w-[101px] h-[22px] text-[14px] leading-[22px] text-[#333333] ml-2">
             Remember me?
           </p>
@@ -99,14 +102,14 @@ export default function SignUp() {
           </div>
 
           <div className="flex items-center w-[360px] h-[32px] whitespace-nowrap ml-10 mt-4">
-            <img src="images/Google.png" alt="Google" width={20} height={20} />
+            <Image src="/images/Google.png" alt="Google" width={20} height={20} />
             <p className="w-[22px] h-[22px] text-[14px] leading-[22px] text-[#4F4F4F] ml-24 ">
               Sign Up With Google
             </p>
           </div>
 
           <div className="flex items-center w-[360px] h-[32px] whitespace-nowrap ml-10 mt-4">
-            <img src="images/Apple.png" alt="Apple" width={20} height={20} />
+            <Image src="/images/Apple.png" alt="Apple" width={20} height={20} />
             <p className="w-[22px] h-[22px] text-[14px] leading-[22px] text-[#4F4F4F] ml-24 ">
               Sign Up With Apple
             </p>

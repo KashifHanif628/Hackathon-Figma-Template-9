@@ -128,8 +128,8 @@ export default function Footer() {
           </h3>
           {/* post 1 */}
           <div className="w-[273.83px] flex">
-            <img
-              src="images/unsplash1.png"
+            <Image
+              src="/images/unsplash1.png"
               alt="unsplash1"
               width={80.24}
               height={79.76}
@@ -147,8 +147,8 @@ export default function Footer() {
 
           {/* post 2 */}
           <div className="w-[273.83px] flex">
-            <img
-              src="images/unsplash2.png"
+            <Image
+              src="/images/unsplash2.png"
               alt="unsplash1"
               width={80.24}
               height={79.76}
@@ -166,8 +166,8 @@ export default function Footer() {
 
           {/* post 3 */}
           <div className="w-[273.83px] flex">
-            <img
-              src="images/unsplash3.png"
+            <Image
+              src="/images/unsplash3.png"
               alt="unsplash1"
               width={80.24}
               height={79.76}
@@ -186,8 +186,8 @@ export default function Footer() {
       </div>
 
       <div className="w-full h-[99px] bg-[#4F4F4F] mt-20">
-        <img
-          src="images/Group1000002252.png"
+        <Image
+          src="/images/Group1000002252.png"
           alt="Group1000002252"
           width={1318}
           height={33}

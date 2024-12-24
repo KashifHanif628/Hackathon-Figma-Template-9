@@ -6,11 +6,11 @@ export default function Home() {
       {/* Left Section */}
       <div className="absolute top-[25%] left-[10%] text-white max-w-[500px]">
         <p className="italic text-gray-900 mb-2 font-bold">
-          It's Quick & Amazing!
+          It&apos;s Quick & Amazing!
         </p>
         <h1 className="text-[50px] leading-[58px] font-bold text-[#FF9F0D]">
-          Welcome <br /> 
-          <span className="text-black"> to food  Quality </span>
+          Welcome <br />
+          <span className="text-black"> to food Quality </span>
           <br />
           <span className="text-black">Restaurant</span>
         </h1>
@@ -23,18 +23,34 @@ export default function Home() {
         </button>
 
         <div className="mt-8 text-gray-800 ">
-          <p>Work is in process on more Multiple pages of our Restaurant.
-            <br/>
-            till then you can check-out our below listed pages.
-            
+          <p>
+            More pages are in progress of our Restaurant website.
+            <br />
+            Till then you can check-out our below listed pages through Navbar.
+            {/* <ul>
               <li className="mt-2 font-bold">Menu</li>
               <li className="mt-2 font-bold">Our Cheif</li>
               <li className="mt-2 font-bold">Sing Up</li>
               <li className="mt-2 font-bold">Sign In 404 Error</li>
               <li className="mt-2 font-bold">FAQ (go down in footer on click of Useful LInks)</li>
               <li className="mt-2 font-bold">404 Error Page Not Fount</li>
-            
+              </ul> */}
           </p>
+
+          <ul>
+            {[
+              "Menu",
+              "Our Chief",
+              "Sign Up",
+              "Sign In 404 Error",
+              "FAQ",
+              "404 Error Page",
+            ].map((item, index) => (
+              <li key={index} className="mt-2 font-bold">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

@@ -9,8 +9,8 @@ export default function Header () {
       {/* Header Section */}
       <header className="w-[1320px] h-[32px] mt-[29px] flex ">
         <ul className="hidden sm:flex gap-6 md:gap-8 lg:gap-12 items-center w-[508px] h-[24px]">
-          <img
-            src="images/Foodtuck.png"
+          <Image
+            src="/images/Foodtuck.png"
             alt="Foodtuck"
             width={109}
             height={32}

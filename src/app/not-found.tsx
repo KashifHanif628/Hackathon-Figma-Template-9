@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -9,7 +11,7 @@ export default function NotFound() {
           <ul className="flex items-center w-[56px] h-[28px] text-[20px] leading-[28px] text-[#FFFFFF] font-normal">
             Home
             <li className="flex items-center gap-2 text-[#FF9F0D] font-normal">
-              <img
+              <Image
                 src="/images/Vector.png"
                 alt="Vector"
                 width={5}
@@ -43,7 +45,8 @@ export default function NotFound() {
 
           <div className="py-10">
           <button className="w-[197px] h-[58px] px-6 py-2 rounded-lg hover:bg-gray-900 bg-[#FF9F0D] items-center  ">
-            <p className="font-bold text-[#FFFFFF] text-[18px] leading-[26px] text-center ">Go to home</p>
+            <p className="font-bold text-[#FFFFFF] text-[18px] leading-[26px] text-center ">
+            <Link href="/">Go to home</Link></p>
           </button>
           </div>
         </div>

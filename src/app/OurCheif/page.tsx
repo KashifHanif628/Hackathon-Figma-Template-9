@@ -26,22 +26,22 @@ export default function OurCheif() {
       {/* Grid Layout */}
       <div className="grid grid-cols-4 gap-x-6 gap-y-6 mx-auto mt-[500px] max-w-screen-lg">
         {[
-          { name: "Tahmina Rumi", img: "picture1.png" },
-          { name: "Jorina Begum", img: "picture2.png" },
-          { name: "M.Mohammad", img: "picture3.png" },
-          { name: "Munna Kathy", img: "picture4.png" },
-          { name: "Tahmina Rumi", img: "picture5.png" },
-          { name: "Bisnu Devgon", img: "picture6.png" },
-          { name: "Motin Molladsf", img: "picture7.png" },
-          { name: "William Rumi", img: "picture8.png" },
-          { name: "Kets William Roy", img: "picture9.png" },
-          { name: "Mahmud Kholil", img: "picture10.png" },
-          { name: "Ataur Rahman", img: "picture11.png" },
-          { name: "Monalisa Holly", img: "picture12.png" },
+          { name: "Tahmina Rumi", Image: "picture1.png" },
+          { name: "Jorina Begum", Image: "picture2.png" },
+          { name: "M.Mohammad", Image: "picture3.png" },
+          { name: "Munna Kathy", Image: "picture4.png" },
+          { name: "Tahmina Rumi", Image: "picture5.png" },
+          { name: "Bisnu Devgon", Image: "picture6.png" },
+          { name: "Motin Molladsf", Image: "picture7.png" },
+          { name: "William Rumi", Image: "picture8.png" },
+          { name: "Kets William Roy", Image: "picture9.png" },
+          { name: "Mahmud Kholil", Image: "picture10.png" },
+          { name: "Ataur Rahman", Image: "picture11.png" },
+          { name: "Monalisa Holly", Image: "picture12.png" },
         ].map((chief, index) => (
           <div key={index} className="text-center">
             <Image
-              src={`/images2/${chief.img}`}
+              src={`/images2/${chief.Image}`}
               alt={chief.name}
               width={312}
               height={312}
